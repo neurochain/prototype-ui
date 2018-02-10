@@ -1,0 +1,21 @@
+{
+  "name": "neurochain-ui",
+  "version": "0.1.0",
+  "description": "NeuroChain demo application",
+  "main": "main.js",
+  "scripts": {
+    "start-ui": "electron .",
+    "start-neurochain": "node launcher.js",
+    "start": "npm-run-all -p -r \"start-neurochain -- {1}\" \"start-ui -- {1}\" --"
+  },
+  "dependencies": {
+    "NeuroChainBot": "git://github.com/neurochain/prototype.git#master",
+    "electron": "~1.7.8",
+    "jquery": "^3.3.1",
+    "moment": "^2.20.1",
+    "node-json2html": "^1.1.1",
+    "npm-run-all": "^4.1.2",
+    "numeral": "^2.0.6",
+    "socket.io": "2.0.3"
+  }
+}

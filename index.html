@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>NeuroChain demo</title>
+    <link href="./resources/stylesheets/Inconsolata.css" rel="stylesheet" type="text/css" />
+    <link href="./resources/stylesheets/style.css" rel="stylesheet" type="text/css" />
+    <link href="./resources/stylesheets/terminal.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+    <script>
+
+      var $ = require('jquery'),
+          Bot = require('./bot.js'),
+          Terminal = require('./terminal.js'),
+          ipcRenderer = require('electron').ipcRenderer;
+
+      var config = ipcRenderer.sendSync('getConfig');
+
+      config.forEach(
+        (bot) => {
+          new Bot(bot.id, 'http://localhost:'+(bot.websocketPort)).render();
+        }
+      );
+
+    </script>
+
+  </body>
+</html>

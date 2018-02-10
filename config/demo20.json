@@ -1,0 +1,25 @@
+[
+  {"id": 1, "listeningPort": 12345, "sendingPort": 5001, "seed": {"host": "127.0.0.1", "port": 12345}, "connectorUDPPort":9855, "websocketPort": 8081},
+  {"id": 2, "listeningPort": 12346, "sendingPort": 5002, "seed": {"host": "127.0.0.1", "port": 12345}, "connectorUDPPort":9856, "websocketPort": 8082},
+  {"id": 3, "listeningPort": 12347, "sendingPort": 5003, "seed": {"host": "127.0.0.1", "port": 12345}, "connectorUDPPort":9857, "websocketPort": 8083},
+  {"id": 4, "listeningPort": 12348, "sendingPort": 5004, "seed": {"host": "127.0.0.1", "port": 12345}, "connectorUDPPort":9858, "websocketPort": 8084},
+  {"id": 5, "listeningPort": 12349, "sendingPort": 5005, "seed": {"host": "127.0.0.1", "port": 12345}, "connectorUDPPort":9859, "websocketPort": 8085},
+
+  {"id": 6, "listeningPort": 12355, "sendingPort": 5006, "seed": {"host": "127.0.0.1", "port": 12355}, "connectorUDPPort":9865, "websocketPort": 8181},
+  {"id": 7, "listeningPort": 12356, "sendingPort": 5007, "seed": {"host": "127.0.0.1", "port": 12355}, "connectorUDPPort":9866, "websocketPort": 8182},
+  {"id": 8, "listeningPort": 12357, "sendingPort": 5008, "seed": {"host": "127.0.0.1", "port": 12355}, "connectorUDPPort":9867, "websocketPort": 8183},
+  {"id": 9, "listeningPort": 12358, "sendingPort": 5009, "seed": {"host": "127.0.0.1", "port": 12355}, "connectorUDPPort":9868, "websocketPort": 8184},
+  {"id": 10, "listeningPort": 12359, "sendingPort": 5010, "seed": {"host": "127.0.0.1", "port": 12355}, "connectorUDPPort":9869, "websocketPort": 8185},
+
+  {"id": 11, "listeningPort": 12365, "sendingPort": 5011, "seed": {"host": "127.0.0.1", "port": 12365}, "connectorUDPPort":9875, "websocketPort": 8281},
+  {"id": 12, "listeningPort": 12366, "sendingPort": 5012, "seed": {"host": "127.0.0.1", "port": 12365}, "connectorUDPPort":9876, "websocketPort": 8282},
+  {"id": 13, "listeningPort": 12367, "sendingPort": 5013, "seed": {"host": "127.0.0.1", "port": 12365}, "connectorUDPPort":9877, "websocketPort": 8283},
+  {"id": 14, "listeningPort": 12368, "sendingPort": 5014, "seed": {"host": "127.0.0.1", "port": 12365}, "connectorUDPPort":9878, "websocketPort": 8284},
+  {"id": 15, "listeningPort": 12369, "sendingPort": 5015, "seed": {"host": "127.0.0.1", "port": 12365}, "connectorUDPPort":9879, "websocketPort": 8285},
+
+  {"id": 16, "listeningPort": 12375, "sendingPort": 5016, "seed": {"host": "127.0.0.1", "port": 12375}, "connectorUDPPort":9885, "websocketPort": 8381},
+  {"id": 17, "listeningPort": 12376, "sendingPort": 5017, "seed": {"host": "127.0.0.1", "port": 12375}, "connectorUDPPort":9886, "websocketPort": 8382},
+  {"id": 18, "listeningPort": 12377, "sendingPort": 5018, "seed": {"host": "127.0.0.1", "port": 12375}, "connectorUDPPort":9887, "websocketPort": 8383},
+  {"id": 19, "listeningPort": 12378, "sendingPort": 5019, "seed": {"host": "127.0.0.1", "port": 12375}, "connectorUDPPort":9888, "websocketPort": 8384},
+  {"id": 20, "listeningPort": 12379, "sendingPort": 5020, "seed": {"host": "127.0.0.1", "port": 12375}, "connectorUDPPort":9889, "websocketPort": 8385}
+]
