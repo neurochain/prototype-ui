@@ -18,6 +18,7 @@ div.bot {
   margin: 1px 1px 0px 1px;
   background: #5D6572;
   background-color: #5D6572;
+  overflow:hidden;
 }
 div.log, div.stats {
   display: block;
@@ -28,6 +29,7 @@ div.log, div.stats {
   height: 260px;
   padding: 0;
   margin: 0;
+  word-wrap: break-word;
 }
 
 div.btn-group {
