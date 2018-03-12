@@ -1,0 +1,6 @@
+[
+  {"id": 1, "listeningPort": 12345, "sendingPort": 5001, "seed": {"host": "127.0.0.1", "port": 12345}, "connectorUDPPort":9876, "websocketPort": 8081, "dbSync": true},
+  {"id": 2, "listeningPort": 12346, "sendingPort": 5002, "seed": {"host": "127.0.0.1", "port": 12345}, "connectorUDPPort":9877, "websocketPort": 8082},
+  {"id": 3, "listeningPort": 12347, "sendingPort": 5003, "seed": {"host": "127.0.0.1", "port": 12345}, "connectorUDPPort":9878, "websocketPort": 8083},
+  {"id": 4, "listeningPort": 12348, "sendingPort": 5004, "seed": {"host": "127.0.0.1", "port": 12345}, "connectorUDPPort":9879, "websocketPort": 8084}
+]
