@@ -16,31 +16,40 @@ function Bot(id, socketUrl) {
         var divButtonBarFilterLog = $('<div>').addClass('btn-group').css('position', 'relative').css('bottom', '0');
         divLog.append(divButtonBarFilterLog);
 
-          var buttonFilter1 = $('<button>').addClass('active').addClass('filter').text('CSN');
+          var buttonFilter1 = $('<button>').addClass('active').addClass('filter').text('CSN').attr('filter', 'CSN');
+          buttonFilter1.append($('<span>').addClass('tooltiptext').text('Hide/Show consensus logs'));
           divButtonBarFilterLog.append(buttonFilter1);
 
-          var buttonFilter2 = $('<button>').addClass('active').addClass('filter').text('TRX');
+          var buttonFilter2 = $('<button>').addClass('active').addClass('filter').text('TRX').attr('filter', 'TRX');
+          buttonFilter2.append($('<span>').addClass('tooltiptext').text('Hide/Show transactions logs'));
           divButtonBarFilterLog.append(buttonFilter2);
 
-          var buttonFilter3 = $('<button>').addClass('active').addClass('filter').text('BLK');
+          var buttonFilter3 = $('<button>').addClass('active').addClass('filter').text('BLK').attr('filter', 'BLK');
+          buttonFilter3.append($('<span>').addClass('tooltiptext').text('Hide/Show blocks logs'));
           divButtonBarFilterLog.append(buttonFilter3);
 
-          var buttonFilter4 = $('<button>').addClass('active').addClass('filter').text('REG');
+          var buttonFilter4 = $('<button>').addClass('active').addClass('filter').text('REG').attr('filter', 'REG');
+          buttonFilter4.append($('<span>').addClass('tooltiptext').text('Hide/Show registration logs'));
           divButtonBarFilterLog.append(buttonFilter4);
 
-          var buttonFilter5 = $('<button>').addClass('active').addClass('filter').text('COM');
+          var buttonFilter5 = $('<button>').addClass('active').addClass('filter').text('COM').attr('filter', 'COM');
+          buttonFilter5.append($('<span>').addClass('tooltiptext').text('Hide/Show communication logs'));
           divButtonBarFilterLog.append(buttonFilter5);
 
-          var buttonFilter6 = $('<button>').addClass('active').addClass('filter').text('BIZ');
+          var buttonFilter6 = $('<button>').addClass('active').addClass('filter').text('BIZ').attr('filter', 'BIZ');
+          buttonFilter6.append($('<span>').addClass('tooltiptext').text('Hide/Show business logs'));
           divButtonBarFilterLog.append(buttonFilter6);
 
-          var buttonFilter7 = $('<button>').addClass('active').addClass('filter').text('SEC');
+          var buttonFilter7 = $('<button>').addClass('active').addClass('filter').text('SEC').attr('filter', 'SEC');
+          buttonFilter7.append($('<span>').addClass('tooltiptext').text('Hide/Show security logs'));
           divButtonBarFilterLog.append(buttonFilter7);
 
-          var buttonFilter8 = $('<button>').addClass('active').addClass('filter').text('HST');
+          var buttonFilter8 = $('<button>').addClass('active').addClass('filter').text('HST').attr('filter', 'HST');
+          buttonFilter8.append($('<span>').addClass('tooltiptext').text('Hide/Show history logs'));
           divButtonBarFilterLog.append(buttonFilter8);
 
-          var buttonFilter9 = $('<button>').addClass('active').addClass('filter').text('CON');
+          var buttonFilter9 = $('<button>').addClass('active').addClass('filter').text('CON').attr('filter', 'CON');
+          buttonFilter9.append($('<span>').addClass('tooltiptext').addClass('left').text('Hide/Show connection logs'));
           divButtonBarFilterLog.append(buttonFilter9);
 
         var sectionLog = $('<section>').addClass('log').attr('id','bot'+id+'Activity');
@@ -166,7 +175,7 @@ function Bot(id, socketUrl) {
   }
 
   function addAction(button, input) {
-    var cssClass ='#bot'+id+' .LOG_'+button.text();
+    var cssClass ='#bot'+id+' .LOG_'+button.attr('filter');
     var style = $("<style type='text/css'> "+cssClass+"{ display:;} </style>");
     style.appendTo("head");
     button.click(

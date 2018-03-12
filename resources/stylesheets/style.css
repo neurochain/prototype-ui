@@ -55,15 +55,34 @@ div.btn-group {
 .btn-group button.filter {
   width: 11.111%;
 }
+.btn-group button:hover {
+    background-color: #0A3250;
+}
+.btn-group button.filter .tooltiptext {
+    display: block;
+    visibility: hidden;
+    width: 120px;
+    background-color: #0A3250;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    position: relative;
+    z-index: 1;
+    font-weight: normal;
+}
+.btn-group button.filter .tooltiptext.left {
+    left: -60px;
+}
+.btn-group button.filter:hover .tooltiptext {
+    visibility: visible;
+}
 .btn-group button:not(:last-child) {
     border-right: none;
 }
 .btn-group:after {
     clear: both;
     display: table;
-}
-.btn-group button:hover {
-    background-color: #0A3250;
 }
 button:focus {
   outline: none;
